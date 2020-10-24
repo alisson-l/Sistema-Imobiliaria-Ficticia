@@ -1,0 +1,522 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans';
+}
+html,body{
+	height: 100%;
+	background: black;
+}
+body{
+	overflow-x: hidden;
+}
+/*PAGINA LOGIN*/
+.box-login{
+	box-shadow: 10px 10px 5px grey;
+	max-width: 600px;
+	width: 95%;
+	padding: 40px 2%;
+	background: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+.box-login h2{
+	text-align: center;
+	margin: 10px 0;
+}
+.box-login input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	padding-left: 8px;
+	margin-top: 8px;
+}
+.box-login input[type=submit]{
+	width: 90px;
+	height: 30px;
+	margin-top: 8px;
+	cursor: pointer;
+	background: #1565c0;
+	color: white;
+	border: 0;
+}
+
+/*BOX ERRO PAINEL*/
+
+.erro-box{
+	width: 100%;
+	padding: 8px 2%;
+	text-align: center;
+	background: #F75353;
+	color: white;
+	font-size: 15px;
+}
+/* FIM PAGINA LOGIN*/
+
+/* PAGINA PRINCIPAL */
+
+.clear{clear: both;}
+.center{padding: 0 2%;margin:0 auto;}
+
+header{
+	position: relative;
+	left: 250px;
+	width: calc(100% - 250px);
+	padding: 10px 0;
+	background: #004d40;
+}
+.content{
+	width: calc(100% - 250px);
+	position: relative;
+	left: 250px;
+	padding: 2%;
+}
+.loggout{
+	float: right;
+}
+.loggout a{
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+.loggout a > span{
+	font-size: 17px;
+	text-decoration: none;
+}
+.menu-btn{
+	color: white;
+	float: left;
+	cursor: pointer;
+	font-size: 25px;
+}
+.menu-btn a{
+	padding: 0 20px;
+	text-decoration: none;
+	color: white;
+	font-size: 25px;
+}
+.menu-btn a > span{
+	font-size: 17px;
+	text-decoration: none;
+}
+
+/* MENU SIDE */
+.menu-wraper{
+	width: 250px;
+}
+.side-menu{
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: 100%;
+	position: fixed;
+	padding: 10px 0;
+	left: 0;
+	top: 0;
+	background: #00897b;
+	float: left;
+	width: 250px;
+}
+.box-usuario{
+	padding: 10px 0;
+	text-align: center;
+}
+.avatar-usuario{
+	text-align: left;
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	border: 2px solid #4db6ac;
+}
+.avatar-usuario i{
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	font-size: 60px;
+	color: #4db6ac;
+}
+.imagem-usuario{
+	display: inline-block;
+	width: 110px;
+	height: 110px;
+	position: relative;
+	border-radius: 50%;
+	border: 3px solid #4db6ac;
+}
+.imagem-usuario img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 50%;
+	height: 100%;
+}
+.nome-usuario{
+	text-align: center;
+	margin-top: 10px;
+}
+.nome-usuario p{
+	color: white;
+	font-size: 17px;
+	font-weight: normal;
+}
+/*CONTEUDO DO PAINEL */
+.w100{
+	width: 100%;
+}
+.w50{
+	width: 49%;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.content{
+	width: calc(100% - 250px);
+	position: relative;
+	left: 250px;
+	padding: 10px;
+}
+.box-content{
+	background: white;
+	padding: 10px;
+	margin-bottom: 25px;
+}
+.box-content h2{
+	padding: 10px;
+	font-size: 20px;
+}
+/* TABELAS */
+.wraper-table{
+	overflow-x: auto;
+}
+table{
+	width: 100%;
+	margin: 20px auto;
+	border-collapse: collapse;
+}
+table tr:nth-of-type(1){
+	background: #4fc3f7;
+	color: black;
+}
+table tr{
+	border-bottom: 1px solid #ccc;
+}
+table tr{
+	color: #555;
+}
+table td{
+	padding: 8px;
+}
+table a.btn{
+	display: inline-block;
+	text-decoration: none;
+	padding: 6px 4px;
+	color:#49800f;
+	font-size: 20px;
+}
+
+a.btn.edit{color: #49800f;}
+a.btn.delete{color: #c94b3a;}
+a.btn.order{color: black;}
+/* PAGINAÇÃO */
+.paginacao{
+	margin: 20px 0;
+	text-align: center;
+}
+.paginacao a{
+	font-size: 14px;
+	margin: 0 8px;
+	display: inline-block;
+	padding: 3px 4px;
+	border: 1px solid #ccc;
+	text-decoration: none;
+	color: #666;
+}
+.paginacao a.pag-select{
+	background: rgb(220,220,220);
+}
+/* ITENS MENU */ 
+.itens-menu h2{
+	text-align: left;
+	font-weight: bold;
+	font-size: 17px;
+	color: white;
+	background: #004d40;
+	padding: 8px;
+}
+.itens-menu a{
+	display: block;
+	padding: 8px;
+	font-size: 15px;
+	text-decoration: none;
+	color: white;
+	border-bottom: 2px solid #004d40;
+}
+.box-metrica{
+	margin-top:16px;
+	padding:0 15px;
+}
+.box-metrica-single{
+	float: left;
+	position: relative;
+	width: 50%;
+	background: #ff9800;
+	border: 5px solid white;
+}
+.box-metrica-single:nth-of-type(2){
+	background: #ff8a80;
+}
+
+.box-metrica-single:nth-of-type(3){
+	background: #0091ea;
+}
+.box-metrica-single:nth-of-type(4){
+	background: #2b0269;
+}
+.box-metrica-wraper{
+	padding: 10px 20px;
+	text-align: left;
+	color: white;
+}
+
+.box-metrica-wraper h2{
+	font-size: 28px;
+}
+
+.box-metrica-wraper p{
+	padding: 10px 0;
+	font-size: 26px;
+}
+/*TABELA RESPONSIVA*/
+.table-responsive{
+	max-width: 1280px;
+	margin:20px auto;
+}
+.table-responsive .row:nth-of-type(1){
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding: 8px 0;
+	background: #4fc3f7;
+}
+.table-responsive .row{
+	color: #444;
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+}
+.col{
+	float: left;
+	width: 50%;
+}
+.box-content form{
+	margin: 30px 0;
+}
+.box-content form label{
+	font-size: 17px;
+	font-weight: 300;
+	color: black;
+	display: block;
+}
+.box-content .form-group{
+	margin: 15px 0;
+}
+.box-content form select{
+	border: 1px solid #ccc;
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;;
+	color: black;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+}
+.box-content form input[type=text],
+.box-content form input[type=number],
+.box-content form input[type=password]{
+	border: 1px solid #ccc;
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;;
+	color: black;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+}
+.box-content form textarea{
+	border: 1px solid #ccc;
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: normal;;
+	color: black;
+	width: 100%;
+	height: 150px;
+	padding: 8px;
+	resize: vertical;
+}
+.box-content form input[type=file]{
+	margin-top: 8px;
+	border: 1px solid #ccc;
+	width: 30%;
+	padding: 8px;
+}
+.box-content form input[type=submit]{
+	font-size: 17px;
+	width: auto;
+	padding: 3px 8px;
+	height: 60px;
+	margin-top: 8px;
+	cursor: pointer;
+	background: #1565c0;
+	color: white;
+	border: 0;
+}
+/* BOX DE ALERTA */ 
+.box-alert{
+	width: 100%;
+	padding: 8px 0;
+}
+.sucesso{
+	font-size: 20px;
+	text-align: center;
+	background:#81c784;
+	color: white;
+}
+.erro{
+	font-size: 20px;
+	text-align: center;
+	background: #F75353;
+	color: white;
+}
+.menu-active{
+	background:  #00695c;
+}
+.menu-active::before{
+	/*
+	ADICIONAR SETA
+	*/ 
+}
+.form-group-login label{
+	font-size: 15px;
+	font-weight: 300;
+}
+.form-group-login input{
+	height: 15px;
+}
+form .form-group-login:nth-of-type(2){
+	position: relative;
+	top: 10px;
+}
+.box-single-wraper{
+	float: left;
+	width: 33.3%;
+	padding: 20px;
+}
+.box-single{
+	width: 100%;
+	border: 1px solid #ccc;
+	min-height: 200px;
+}
+.topo-box{
+	text-align: center;
+	color: #ccc;
+	padding: 8px 0;
+	border-bottom: 1px solid #ccc;
+}
+.topo-box h2{
+	font-size: 12px;
+}
+.body-box{
+	padding: 10px;
+}
+.body-box p{
+	color: #646464;
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+.group-btn a{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 3px 8px;
+}
+.group-btn{
+	margin-top: 8px;
+}
+.busca{
+	margin: 10px 0;
+	width: 100%;
+	padding: 4px 10px;
+	background: #004d40 ;
+}
+.busca form{
+	margin: 0;
+}
+.busca h4{
+	font-weight: lighter;
+	font-size: 20px;
+	color: white;;
+}
+.busca form input[type=submit]{
+	width: 120px;
+	height: 40px;
+	font-size: 17px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	cursor: pointer;
+	background:#1565c0;
+	color: white;
+	border: 0;
+}
+.busca-result{
+	color:#646464;
+	border-top: 3px solid #ccc;
+}
+.busca-result p {
+	padding: 8px 0;
+	font-size: 16px;
+}
+@media screen and (max-width: 1024px){
+	.box-single-wraper{
+		width: 100%;
+		min-height: 0;
+	}
+	.box-metrica-single{
+		width: 100%;
+	}
+}
+@media screen  and (max-width: 768px){
+	.side-menu{
+		display: none;
+	}
+
+	.content{
+		width: 100%;
+		left: 0;
+	}
+	header{
+		left: 0;
+		width: 100%;
+	}
+}	
+@media screen and (max-width: 500px){
+	.w50{
+		width: 100%;
+	}
+	.box-single-metrica{
+		width: 100%;
+		padding-top: 40%;
+	}
+}
+@media screen and (max-width: 400px){
+	.menu-wraper{
+		width: 200px;
+	}
+}
