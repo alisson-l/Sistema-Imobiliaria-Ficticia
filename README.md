@@ -21,7 +21,7 @@ Sistema teste Imobiliaria
  Todas senhas são " 123 "
  
  LOGIN
- CEO - Com acesso a todas Permissões
- adm - Acesso apenas a parte Administrativa
- comercial - Acesso a Area ADM & Comercial
- financeiro - Acesso a todas as Areas menos a Visão Geral!
+ - CEO = Com acesso a todas Permissões
+ - adm = Acesso apenas a parte Administrativa
+ - comercial =  Acesso a Area ADM & Comercial
+ - financeiro = Acesso a todas as Areas menos a Visão Geral!
